@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Select Option Field in Form</title>
+  <style>
+    body {
+      background-color: #3386FF ;
+      font-family: "Trebuchet MS", sans-serif;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    select {
+      background-color: #69C314 ;
+      color: yellow;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+
+    <h1>Styled Select Option Field in Form</h1>
+    <br>
+    <hr>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="age">Age:</label>
+    <select id="age" name="age">
+      <option value="" disabled selected>--- Choose Age From Here ---</option>
+      <option value="below18">Below 18 years</option>
+      <option value="25-40">Between 25-40 years</option>
+      <option value="40-60">Between 40-60 years</option>
+      <option value="above60">Above 60 years</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
+
+
